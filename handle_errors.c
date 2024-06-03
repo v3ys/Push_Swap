@@ -6,7 +6,7 @@
 /*   By: veraslan <veraslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 22:18:39 by veraslan          #+#    #+#             */
-/*   Updated: 2024/06/01 00:55:50 by veraslan         ###   ########.fr       */
+/*   Updated: 2024/06/01 17:54:00 by veraslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	free_stack(t_stack_node **stack, char **argv, int check)
 	t_stack_node	*tmp;
 	t_stack_node	*current;
 	int				i;
-	
+
 	i = 0;
 	if (!stack)
 		return ;
@@ -62,7 +62,7 @@ void	free_stack(t_stack_node **stack, char **argv, int check)
 	}
 	if (check == 1)
 	{
-		while(argv[i])
+		while (argv[i])
 		{
 			free(argv[i]);
 			i++;
@@ -74,7 +74,6 @@ void	free_stack(t_stack_node **stack, char **argv, int check)
 
 void	free_errors(t_stack_node **a, char **argv, int check)
 {
-
 	free_stack(a, argv, check);
 	ft_printf("Error\n");
 	exit(1);

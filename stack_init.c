@@ -6,7 +6,7 @@
 /*   By: veraslan <veraslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 18:46:36 by veraslan          #+#    #+#             */
-/*   Updated: 2024/06/01 01:16:22 by veraslan         ###   ########.fr       */
+/*   Updated: 2024/06/01 17:56:18 by veraslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,6 +110,6 @@ void	prep_for_push(t_stack_node **stack,
 				rb(stack, false);
 			else
 				rrb(stack, false);
-		}	
+		}
 	}
 }

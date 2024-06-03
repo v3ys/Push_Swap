@@ -6,7 +6,7 @@
 /*   By: veraslan <veraslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 18:36:08 by veraslan          #+#    #+#             */
-/*   Updated: 2024/06/01 00:53:45 by veraslan         ###   ########.fr       */
+/*   Updated: 2024/06/01 17:57:03 by veraslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ typedef struct s_stack_node
 	struct s_stack_node	*prev;
 }	t_stack_node;
 //Errors
-int				error_syntax(char *str_n); 
+int				error_syntax(char *str_n);
 int				duplicate_error(t_stack_node *a, int n);
 void			free_stack(t_stack_node **stack, char **argv, int check);
 void			free_errors(t_stack_node **a, char **argv, int check);
@@ -65,11 +65,11 @@ void			rrr(t_stack_node **a, t_stack_node **b, bool print);
 void			pa(t_stack_node **a, t_stack_node **b, bool print);
 void			pb(t_stack_node **b, t_stack_node **a, bool print);
 void			rotate_both(t_stack_node **a,
-						t_stack_node **b,
-						t_stack_node *cheapest_node);
-void	rev_rotate_both(t_stack_node **a,
-								t_stack_node **b,
-								t_stack_node *cheapest_node);
+					t_stack_node **b,
+					t_stack_node *cheapest_node);
+void			rev_rotate_both(t_stack_node **a,
+					t_stack_node **b,
+					t_stack_node *cheapest_node);
 //***Algorithm
 void			sort_three(t_stack_node **a);
 void			sorting(t_stack_node **a, t_stack_node **b);

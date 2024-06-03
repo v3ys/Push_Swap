@@ -6,7 +6,7 @@
 /*   By: veraslan <veraslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 20:01:10 by veraslan          #+#    #+#             */
-/*   Updated: 2024/05/31 23:18:51 by veraslan         ###   ########.fr       */
+/*   Updated: 2024/06/01 17:54:21 by veraslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static void	move_a_to_b(t_stack_node **a, t_stack_node **b)
 		rev_rotate_both(a, b, cheapest_node);
 	prep_for_push(a, cheapest_node, 'a');
 	prep_for_push(b, cheapest_node->target_node, 'b');
-	pb(b,a,false);
+	pb(b, a, false);
 }
 
 static void	move_b_to_a(t_stack_node **a, t_stack_node **b)

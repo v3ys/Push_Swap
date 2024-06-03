@@ -6,18 +6,17 @@
 /*   By: veraslan <veraslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 19:10:59 by veraslan          #+#    #+#             */
-/*   Updated: 2024/05/31 23:41:09 by veraslan         ###   ########.fr       */
+/*   Updated: 2024/06/01 17:53:24 by veraslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-
 int	stack_len(t_stack_node *stack)
 {
 	int	count;
 
-	if (!stack) 
+	if (!stack)
 		return (0);
 	count = 0;
 	while (stack)
@@ -67,7 +66,7 @@ t_stack_node	*find_min(t_stack_node *stack)
 		}
 		stack = stack->next;
 	}
-	return (min_node); 
+	return (min_node);
 }
 
 t_stack_node	*find_max(t_stack_node *stack)

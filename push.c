@@ -6,7 +6,7 @@
 /*   By: veraslan <veraslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 22:22:48 by veraslan          #+#    #+#             */
-/*   Updated: 2024/05/31 22:23:54 by veraslan         ###   ########.fr       */
+/*   Updated: 2024/06/01 17:56:41 by veraslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ static void	push(t_stack_node **dst, t_stack_node **src)
 
 void	pa(t_stack_node **a, t_stack_node **b, bool print)
 {
-	push(a, b); 
-	if (!print) 
+	push(a, b);
+	if (!print)
 		ft_printf("pa\n");
 }
 

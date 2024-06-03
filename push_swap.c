@@ -6,11 +6,21 @@
 /*   By: veraslan <veraslan@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 18:35:54 by veraslan          #+#    #+#             */
-/*   Updated: 2024/06/01 01:15:25 by veraslan         ###   ########.fr       */
+/*   Updated: 2024/06/01 18:04:26 by veraslan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+static void	not_sorted(t_stack_node *a, t_stack_node *b)
+{
+	if (stack_len(a) == 2)
+		sa(&a, false);
+	else if (stack_len(a) == 3)
+		sort_three(&a);
+	else
+		sorting(&a, &b);
+}
 
 int	main(int argc, char **argv)
 {
@@ -32,14 +42,7 @@ int	main(int argc, char **argv)
 	}
 	stack_init_a(&a, splitted, check);
 	if (!stack_sorted(a))
-	{
-		if (stack_len(a) == 2)
-			sa(&a, false);
-		else if (stack_len(a) == 3)
-			sort_three(&a);
-		else
-			sorting(&a, &b);
-	}
+		not_sorted(a, b);
 	free_stack(&a, splitted, check);
 	return (0);
 }
